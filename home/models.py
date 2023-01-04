@@ -64,3 +64,32 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class ProductImage(models.Model):
+    product=models.ForeignKey(Product,on_delete=models.CASCADE)
+    image=models.ImageField(upload_to='media')
+
+    def __str__(self):
+        return self.product.name
+
+class ProductReview(models.Model):
+    username=models.CharField(max_length=300)
+    email=models.EmailField(max_length=200)
+    comment=models.TextField()
+    star=models.IntegerField()
+    date=models.CharField(max_length=100)
+    slug=models.TextField(default='Product')
+
+    def __str__(self):
+        return self.username
+
+class Cart(models.Model):
+    username=models.CharField(max_length=300)
+    slug=models.TextField()
+    quantity=models.IntegerField(default=1)
+    total=models.FloatField()
+    checkout=models.BooleanField(default=False)
+    items=models.ForeignKey(Product,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.username

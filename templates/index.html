@@ -209,7 +209,7 @@
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
-                                <a href="#">{{hot.name}}</a>
+                                <a href="/details/{{hot.slug}}">{{hot.name}}</a>
                                 <div class="ratting">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -219,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="product-detail.html">
+                                <a href="/details/{{hot.slug}}">
                                     <img src="{{hot.image.url}}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -283,7 +283,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="img/product-6.jpg" alt="Product Image">
+                                    <img src="{% static 'img/product-6.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -311,7 +311,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="img/product-7.jpg" alt="Product Image">
+                                    <img src="{% static 'img/product-7.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -339,7 +339,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="img/product-8.jpg" alt="Product Image">
+                                    <img src="{% static 'img/product-8.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -367,7 +367,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="img/product-9.jpg" alt="Product Image">
+                                    <img src="{% static 'img/product-9.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -395,7 +395,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="img/product-10.jpg" alt="Product Image">
+                                    <img src="{% static 'img/product-10.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -421,7 +421,7 @@
                     <div class="col-md-6">
                         <div class="review-slider-item">
                             <div class="review-img">
-                                <img src="img/review-1.jpg" alt="Image">
+                                <img src="{% static 'img/review-1.jpg' %}" alt="Image">
                             </div>
                             <div class="review-text">
                                 <h2>Customer Name</h2>
@@ -442,7 +442,7 @@
                     <div class="col-md-6">
                         <div class="review-slider-item">
                             <div class="review-img">
-                                <img src="img/review-2.jpg" alt="Image">
+                                <img src="{% static 'img/review-2.jpg' %}" alt="Image">
                             </div>
                             <div class="review-text">
                                 <h2>Customer Name</h2>
@@ -463,7 +463,7 @@
                     <div class="col-md-6">
                         <div class="review-slider-item">
                             <div class="review-img">
-                                <img src="img/review-3.jpg" alt="Image">
+                                <img src="{% static 'img/review-3.jpg' %}" alt="Image">
                             </div>
                             <div class="review-text">
                                 <h2>Customer Name</h2>
